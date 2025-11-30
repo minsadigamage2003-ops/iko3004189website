@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with Children, Families & Communities</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="parallax-bg"></div>
+<!-- Header -->
+<header class="header">
+    <div class="header-content">
+        <h1>Thriving Together: Supporting Children, Families & Communities</h1>
+        <p>A Professional Resource for Early Childhood Educators</p>
+    </div>
+</header>
+
+<!-- Navigation -->
+<nav class="main-nav">
+    <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="economic.html">Economic Contexts</a></li>
+        <li><a href="social.html">Social Contexts</a></li>
+        <li><a href="cultural.html">Cultural & Diversity</a></li>
+        <li><a href="health.html">Health & Wellbeing</a></li>
+        <li><a href="crisis.html">Crisis & Emergency</a></li>
+        <li><a href="references.html">References</a></li>
+    </ul>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-overlay">
+        <div class="hero-content">
+            <h2>Welcome Message</h2>
+            <p>The website Thriving Together is for professional early childhood education and it intends to support teachers in their understanding of the family and community contexts which are diverse and have a great impact on the children's lives in the current Australian society. The resource is a combination of research findings, sociological theory, policy analysis, and practical strategies that will enable educators to work with children and families in a confident, respectful, and collaborative manner.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Main Content -->
+<main class="main-content">
+    <div class="context-grid">
+        <a href="economic.html" class="context-card">
+            <div class="context-icon">💰</div>
+            <h3>Economic Contexts</h3>
+            <p>Supporting families experiencing poverty, housing stress, and financial hardship</p>
+            <span class="card-arrow">→</span>
+        </a>
+
+        <a href="social.html" class="context-card">
+            <div class="context-icon">👥</div>
+            <h3>Social Contexts</h3>
+            <p>Addressing isolation, divorce, and out-of-home care situations</p>
+            <span class="card-arrow">→</span>
+        </a>
+
+        <a href="cultural.html" class="context-card">
+            <div class="context-icon">🌏</div>
+            <h3>Cultural & Diversity</h3>
+            <p>Celebrating First Nations, immigrant, and refugee families</p>
+            <span class="card-arrow">→</span>
+        </a>
+
+        <a href="health.html" class="context-card">
+            <div class="context-icon">❤️</div>
+            <h3>Health & Wellbeing</h3>
+            <p>Understanding mental illness, trauma, grief, and substance use</p>
+            <span class="card-arrow">→</span>
+        </a>
+
+        <a href="crisis.html" class="context-card">
+            <div class="context-icon">🆘</div>
+            <h3>Crisis & Emergency</h3>
+            <p>Responding to natural disasters, family violence, and displacement</p>
+            <span class="card-arrow">→</span>
+        </a>
+
+        <a href="references.html" class="context-card references-card">
+            <div class="context-icon">📚</div>
+            <h3>References & Resources</h3>
+            <p>Complete bibliography and resource links</p>
+            <span class="card-arrow">→</span>
+        </a>
+    </div>
+
+    <section class="intro-section">
+        <h2>About This Resource</h2>
+
+        <div class="intro-grid">
+
+            <!-- Purpose of This Website -->
+            <div class="intro-card">
+                <h4>Purpose of This Website</h4>
+                <p>This website aims to deepen educators’ understanding of the contexts that influence children’s development and wellbeing, provide clear explanations of complex social issues, introduce evidence-based strategies for inclusive practice, strengthen partnerships with families and communities, and share high-quality resources for children aged birth to five.</p>
+            </div>
+
+            <!-- Who This Website Is For -->
+            <div class="intro-card">
+                <h4>Who This Website Is For</h4>
+                <p>This resource supports early childhood educators, pre-service teachers, educational leaders, centre directors, allied health and family support professionals, and students enrolled in EPRO204 or similar units. The tone is formal and suitable for both professional and academic contexts.</p>
+            </div>
+
+            <!-- How to Navigate This Website -->
+            <div class="intro-card">
+                <h4>How to Navigate This Website</h4>
+                <p>The website is organised into five major family and community contexts: Economic, Social, Cultural & Diversity, Health & Wellbeing, and Crisis & Emergency. Each section includes an overview, impacts on children and families, relevant Australian policies, five educator strategies, five organisations, twelve children’s resources, and links to EYLF V2.0 and Practice Principles.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Vision Section (Separate) -->
+    <section class="intro-section" style="text-align: center;">
+        <h2>Our Vision</h2>
+        <p>Every child and family should be welcomed, valued, understood, and supported. Strong, respectful community connections enable educators to help children participate fully and joyfully in their lives.</p>
+    </section>
+
+    <!-- Professional Commitment Section (Separate) -->
+    <section class="intro-section" style="text-align: center;">
+        <h2>Professional Commitment</h2>
+        <p>This website upholds Australian early childhood professional standards, reflects ethical and strength-based practice, promotes diversity, inclusion, reconciliation, and equity, and adheres to APA 7 academic conventions.</p>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <p><strong>2025 T3 EPRO204 Working with Families and Communities</strong></p>
+    <p>Assessment 3 <br>
+        Iko3004189</p>
+</footer>
+<script>
+    // Calculate and set proper height for parallax
+    function setParallaxHeight() {
+        const parallaxBg = document.querySelector('.parallax-bg');
+        const body = document.body;
+        const html = document.documentElement;
+
+        // Get full page height
+        const pageHeight = Math.max(
+            body.scrollHeight,
+            body.offsetHeight,
+            html.clientHeight,
+            html.scrollHeight,
+            html.offsetHeight
+        );
+
+        // Set height: viewport height + (page height * parallax ratio)
+        const parallaxHeight = window.innerHeight + (pageHeight * 0.1);
+        parallaxBg.style.height = parallaxHeight + 'px';
+    }
+
+    // Set height on load and resize
+    window.addEventListener('load', setParallaxHeight);
+    window.addEventListener('resize', setParallaxHeight);
+
+    // Parallax scroll effect
+    window.addEventListener('scroll', function() {
+        const parallaxBg = document.querySelector('.parallax-bg');
+        const scrolled = window.pageYOffset;
+        parallaxBg.style.transform = `translateY(${scrolled * 0.06}px)`;
+    });
+</script>
+</body>
+
+</html>
